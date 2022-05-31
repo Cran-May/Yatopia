@@ -43,68 +43,6 @@ Run the following commands in the root directory:
 ```
 
 
-## Using Yatopia-API
-
-To build your plugin against the Yatopia-API, first add the CodeMC maven repository:
-
-# Maven
-Add the CodeMC Repo:
-```xml
-<repositories>
-    <repository>
-        <id>codemc-repo</id>
-        <url>https://repo.codemc.io/repository/maven-public/</url>
-    </repository>
-</repositories>
-```
-
-And then add the Yatopia-API dependency:
-```xml
-<dependencies>
-    <dependency>
-        <groupId>org.yatopiamc</groupId>
-        <artifactId>yatopia-api</artifactId>
-        <version>1.16.5-R0.1-SNAPSHOT</version>
-        <scope>provided</scope>
-    </dependency>
-</dependencies>
-```
-
-# Gradle
-
-> Groovy DSL
-
-Add the CodeMC Repo:
-```groovy
-repositories {
-    maven {
-        url 'https://repo.codemc.io/repository/maven-public/'
-    }
-}
-```
-
-And then add the Yatopia-API dependency:
-```groovy
-dependencies {
-    compileOnly 'org.yatopiamc:yatopia-api:1.16.5-R0.1-SNAPSHOT'
-}
-```
-
-> Kotlin DSL
-
-Add the CodeMC Repo:
-```kotlin
-repositories {
-    maven("https://repo.codemc.io/repository/maven-public/")
-}
-```
-
-And then add the Yatopia-API dependency:
-```kotlin
-dependencies {
-    compileOnly("org.yatopiamc:yatopia-api:1.16.5-R0.1-SNAPSHOT")
-}
-```
 
 ## Why aren't there many API additions?
 
