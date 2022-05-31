@@ -24,6 +24,68 @@ Keep in mind this, whilst rare, can cause issues.
 If you happen to run into any of these, please do create or upvote an [issue](https://github.com/YatopiaMC/Yatopia/issues) instead of spreading hate.
 Thank you for your understanding!
 
+## Using Yatopia-API
+
+To build your plugin against the Yatopia-API, first add the CodeMC maven repository:
+
+# Maven
+Add the CodeMC Repo:
+```xml
+<repositories>
+    <repository>
+        <id>codemc-repo</id>
+        <url>https://repo.codemc.io/repository/maven-public/</url>
+    </repository>
+</repositories>
+```
+
+And then add the Yatopia-API dependency:
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.yatopiamc</groupId>
+        <artifactId>yatopia-api</artifactId>
+        <version>1.16.5-R0.1-SNAPSHOT</version>
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
+```
+
+# Gradle
+
+> Groovy DSL
+
+Add the CodeMC Repo:
+```groovy
+repositories {
+    maven {
+        url 'https://repo.codemc.io/repository/maven-public/'
+    }
+}
+```
+
+And then add the Yatopia-API dependency:
+```groovy
+dependencies {
+    compileOnly 'org.yatopiamc:yatopia-api:1.16.5-R0.1-SNAPSHOT'
+}
+```
+
+> Kotlin DSL
+
+Add the CodeMC Repo:
+```kotlin
+repositories {
+    maven("https://repo.codemc.io/repository/maven-public/")
+}
+```
+
+And then add the Yatopia-API dependency:
+```kotlin
+dependencies {
+    compileOnly("org.yatopiamc:yatopia-api:1.16.5-R0.1-SNAPSHOT")
+}
+```
 ## Try it out 
 The latest stable builds of Yatopia are always available over at our [downloads page](https://yatopiamc.org/download.html). You can also download the latest development build [here](https://api.yatopiamc.org/v2/latestBuild/download?branch=ver/1.16.5).
 
